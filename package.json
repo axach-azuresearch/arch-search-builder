@@ -1,0 +1,25 @@
+{
+  "name": "arch-search-builder",
+  "version": "1.0.0",
+  "description": "Artefact builder for architecture search",
+  "main": "quo-vadis.js",
+  "repository": "",
+  "dependencies": {
+    "async": "~0.2.8",
+    "azure-storage": "^2.6.0",
+    "cron": "^1.3.0",
+    "express": "~3.2.4",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "socket.io": "~0.9.14"
+  },
+  "keywords": [
+    "batch",
+    "jobs",
+    "cron",
+    "Node.js"
+  ],
+  "devDependencies": {
+    "babel-install": "2.1.0"
+  }
+}
