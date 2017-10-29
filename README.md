@@ -30,4 +30,6 @@
 ##### _Docs about cron jobs with cron_
 ```
 [npmjs cron](https://www.npmjs.com/package/node-cron)
+[Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 ```
