@@ -21,7 +21,7 @@
 '00 03 16 11 * *'
 ```
 
-###############################################################################
+
 ##### _Docs about reading blobs from Azure strorage_
 ```
 http://willi.am/blog/2014/07/03/azure-blob-storage-and-node-downloading-blobs/
