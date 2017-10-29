@@ -26,4 +26,4 @@
 ## Useful documentation
 
 * [Cron jobs with npmjs cron](https://www.npmjs.com/package/node-cron)
-* [Reading blobs from Azure storage]((http://willi.am/blog/2014/07/03/azure-blob-storage-and-node-downloading-blobs)
+* [Reading blobs from Azure storage](http://willi.am/blog/2014/07/03/azure-blob-storage-and-node-downloading-blobs)
