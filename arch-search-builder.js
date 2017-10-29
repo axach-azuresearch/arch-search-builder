@@ -3,6 +3,7 @@ var config = require('./config.json');
 var https = require('https');
 var cronJob = require('cron').CronJob;
 var nodemailer = require('nodemailer');
+var azureStorage = require('azure-storage');
 
 // Global variables
 var runCount = 0;
@@ -24,17 +25,16 @@ var arrayOldAssets = new Array();
 var sliceOldAssets = null;
 
 // Azure Storage
-var azureStorage = require('azure-storage');
-var azureStorageAccount = 'xxx';
-var azureStorageAccessKey = 'xxx';
-var azureStorageContainer = 'archsearchcontainer';
+var azureStorageAccount = config.azureStorageAccount;
+var azureStorageAccessKey = config.azureStorageAccessKey;
+var azureStorageContainer = config.azureStorageContainer;
 var blobService = azureStorage.createBlobService(azureStorageAccount, azureStorageAccessKey);
 
 // Azure Search
-var azureSearchHost = 'xxx';
-var azureSearchPath = '/indexes/arch-search/docs';
-var azureSearchApiVersion = '2016-09-01';
-var azureSearchApiKey = 'xxx';
+var azureSearchHost = config.azureSearchHost;
+var azureSearchPath = config.azureSearchPath;
+var azureSearchApiVersion = config.azureSearchApiVersion;
+var azureSearchApiKey = config.azureSearchApiKey;
 var azureSearchContentType = 'application/json; charset=utf-8';
 var skipAzureAssets = 0;
 var splitAzureAssets = 1000;
