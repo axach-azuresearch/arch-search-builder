@@ -22,14 +22,8 @@
 ```
 
 
-##### _Docs about reading blobs from Azure strorage_
-```
-[willi.am blog](http://willi.am/blog/2014/07/03/azure-blob-storage-and-node-downloading-blobs)
-```
 
-##### _Docs about cron jobs with cron_
-```
-[npmjs cron](https://www.npmjs.com/package/node-cron)
-[Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-```
+## Useful documentation
+
+* [Cron jobs with npmjs cron](https://www.npmjs.com/package/node-cron)
+* [Reading blobs from Azure storage]((http://willi.am/blog/2014/07/03/azure-blob-storage-and-node-downloading-blobs)
