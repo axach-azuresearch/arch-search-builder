@@ -1,4 +1,5 @@
 // Required libs
+var config = require('./config.json');
 var https = require('https');
 var cronJob = require('cron').CronJob;
 var nodemailer = require('nodemailer');
@@ -10,13 +11,13 @@ var repeatParam = 0;
 var selectedAssettype = null;
 var deliverables = [ 'IsInterface', 'Domain', 'Application', 'ApprovedElement', 'SolutionBlueprint', 'Terminology', 'Event'];
 var masterApplications = JSON.stringify({masterapps: [
-                                {assettype:'IsInterface', id: 'APP-656', name: 'CentraSite', mail: 'xxx'}, 
-                                {assettype:'Domain', id: 'APP-995', name: 'Mega', mail: 'xxx'},
-                                {assettype:'Application', id: 'APP-995', name: 'Mega', mail: 'xxx'},
-                                {assettype:'ApprovedElement', id: 'APP-543', name: 'Innovator', mail: 'xxx'},
-                                {assettype:'SolutionBlueprint', id: 'APP-543', name: 'Innovator', mail: 'xxx'},
-                                {assettype:'Terminology', id: 'APP-558', name: 'Sharepoint', mail: 'xxx'},
-                                {assettype:'Event', id: 'APP-558', name: 'Sharepoint', mail: 'xxx'},
+                                {assettype:'IsInterface', id: 'APP-656', name: 'CentraSite', mail: config.centrasiteMail}, 
+                                {assettype:'Domain', id: 'APP-995', name: 'Mega', mail: config.megaMail},
+                                {assettype:'Application', id: 'APP-995', name: 'Mega', mail: config.megaMail},
+                                {assettype:'ApprovedElement', id: 'APP-543', name: 'Innovator', mail: config.innovatorMail},
+                                {assettype:'SolutionBlueprint', id: 'APP-543', name: 'Innovator', mail: config.innovatorMail},
+                                {assettype:'Terminology', id: 'APP-558', name: 'Sharepoint', mail: config.sharepointMail},
+                                {assettype:'Event', id: 'APP-558', name: 'Sharepoint', mail: config.sharepointMail},
                             ]}); 
 var assetsToPost = null;
 var arrayOldAssets = new Array();
