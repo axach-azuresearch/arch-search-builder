@@ -292,20 +292,21 @@ var index = -1;
 deliverables.forEach( function(deliverable) {
     if (index < 0) {
         console.log("...................................................................................................................");
-        console.log("                   Archtecture Search Builder starts at " + new Date());
+        console.log("                   Architecture Search Builder starts at " + new Date());
         console.log("´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´");
     }
     index++;
     //var cronParams =  "*/100 * * * * *";
     //var cronParams =  '00 13 19 * * ' + index;
-    var cronParams =  '00 ' + (index+43) + ' * * * 5';
+    
+    var cronParams =  '00 ' + (index+49) + ' * * * *';
     new cronJob(cronParams,
          function startExecution(callback) {
             selectedAssettype = deliverable;
             runCount++;
             console.log("\n\n\n...................................................................................................................");
             console.log("...................................................................................................................");
-            console.log("    Archtecture Search Builder run " + runCount + " for " + selectedAssettype + " started at " + new Date());
+            console.log("    Architecture Search Builder run " + runCount + " for " + selectedAssettype + " started at " + new Date());
             console.log("´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´");
             console.log("´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´");
             getAzureStorageBlob(function(error, result) {
