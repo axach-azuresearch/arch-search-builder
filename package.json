@@ -22,6 +22,7 @@
   ],
   "devDependencies": {
     "babel-install": "2.1.0",
-    "sshpk": ">=1.13.2"
+    "sshpk": ">=1.13.2",
+    "hoek": ">=4.2.1"
   }
 }
