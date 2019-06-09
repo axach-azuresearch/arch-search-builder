@@ -21,7 +21,7 @@
     "Node.js"
   ],
   "devDependencies": {
-    "babel-install": "2.1.0"
+    "babel-install": "2.1.0",
     "sshpk": ">=1.13.2"
   }
 }
